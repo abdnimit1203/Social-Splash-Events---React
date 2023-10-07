@@ -17,12 +17,12 @@ const EventCard = ({ event }) => {
       data-aos-duration="500"
       className=""
     >
-      <div className="relative flex w-[80%] md:max-w-6xl mx-auto flex-col md:flex-row rounded-xl bg-white bg-clip-border gap-4 text-gray-700 shadow-md">
-        <div className="relative m-0 shrink-0 overflow-hidden md:rounded-xl md:rounded-r-none bg-white bg-clip-border text-gray-700">
+      <div className="relative flex w-[80%] md:max-w-6xl mx-auto flex-col lg:flex-row rounded-xl bg-white bg-clip-border gap-4 text-gray-700 shadow-md">
+        <div className="relative m-0 shrink-0 overflow-hidden lg:rounded-xl  md:rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
             src={image_square}
             alt="image"
-            className="md:max-w-xs aspect-square"
+            className="w-full lg:max-w-xs mx-auto aspect-square"
           />
         </div>
         <div className="p-6">
@@ -45,7 +45,7 @@ const EventCard = ({ event }) => {
           </p>
           <div className="flex justify-between items-center">
             <p className="text-lg italic underline font-semibold">{price}</p>
-            <Link>
+            <Link to={`/event/${id}`}>
               <button className="btn font-main btn-primary text-white rounded-sm">
                 {" "}
                 View Details

@@ -15,17 +15,17 @@ const Header = () => {
         <div className="hero-overlay bg-opacity-0 bg-gradient-to-tr from-[#b90baa9c] to-[#00000075]"></div>
         <div className="hero-content text-center">
           <div className="max-w-4xl text-white">
-            <h1 data-aos="fade-right" className="mb-5 text-5xl font-bold ">
+            <h1 data-aos="fade-right" className="mb-5 text-5xl lg:text-7xl font-bold ">
               Welcome to Social Splash
             </h1>
             <div
               data-aos="fade-right"
               className="flex items-center flex-col gap-2"
             >
-              <h4 className="text-lg bg-[#11111179] w-fit">
+              <h4 className="text-lg lg:text-2xl bg-[#11111179] w-fit">
                 From Weddings Celebrations, Parties, and more -
               </h4>
-              <h4 className="text-lg bg-[#11111179] w-fit">
+              <h4 className="text-lg lg:text-2xl bg-[#11111179] w-fit">
                 {" "}
                 Do not fear, Take Heart!
               </h4>
@@ -35,7 +35,7 @@ const Header = () => {
             </p>
             <p
               data-aos="fade-right"
-              className=" font-main m-5 text-2xl font-semibold"
+              className=" font-main lg:text-4xl m-5 text-2xl font-semibold"
             >
               ONE-OF-A-KIND VENUES
             </p>

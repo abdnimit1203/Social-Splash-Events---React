@@ -46,7 +46,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <div className="navbar bg-base-100 font-main uppercase font-semibold">
+      <div className="navbar bg-base-100 font-main uppercase font-semibold p-6 lg:px-[10%]">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost md:hidden">
@@ -78,10 +78,10 @@ const Navbar = () => {
           <ul className="gap-6 menu menu-horizontal px-2 ">{navLinks1}</ul>
         </div>
         <div className="navbar-end flex-col sm:flex-row items-end gap-2">
-          <Link className="btn btn-secondary rounded-full btn-xs sm:btn-sm" to={"/login"}>
+          <Link className="btn btn-secondary rounded-sm shadow-md shadow-red-200 btn-xs sm:btn-sm" to={"/login"}>
             <button>LOGIN</button>
           </Link>
-          <Link className="btn text-secondary rounded-full border border-secondary sm:mx-2 btn-xs sm:btn-sm" to={"/registration"}>
+          <Link className="btn bg-white hover:bg-secondary hover:text-white text-secondary rounded-sm shadow-md shadow-red-200 border-2 border-secondary hover:border-secondary sm:mx-2 btn-xs sm:btn-sm " to={"/registration"}>
             <button>REGISTER</button>
           </Link>
         </div>

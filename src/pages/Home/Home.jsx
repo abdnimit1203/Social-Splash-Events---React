@@ -10,11 +10,14 @@ const Home = () => {
       <div>
         <Header></Header>
       </div>
-      <div className="py-12 bg-yellow-50">
-        <h2 className="w-full text-center text-4xl font-semibold ">| Our Events |</h2>
+      <div className="py-12 bg-yellow-50" style={{
+          backgroundImage: "url(/bgrepeat.png)",
+        }}>
+        <h2 className="w-full text-center text-4xl font-semibold bg-[#fffef1] ">| Our Events |</h2>
         <hr className="w-40 mx-auto h-10 " />
         <Events events={events}></Events>
       </div>
+      
     </>
   );
 };
