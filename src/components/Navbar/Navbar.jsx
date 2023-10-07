@@ -16,7 +16,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink
-        to="/about"
+        to="/ideas"
         className={({ isActive, isPending }) =>
           isPending
             ? "pending"
@@ -25,7 +25,7 @@ const Navbar = () => {
             : "hover:text-primary"
         }
       >
-        About
+        Featured Ideas
       </NavLink>
       <NavLink
         to="/upcoming-events"
@@ -40,18 +40,7 @@ const Navbar = () => {
         Upcoming Events
       </NavLink>
 
-      <NavLink
-        to="/registration"
-        className={({ isActive, isPending }) =>
-          isPending
-            ? "pending"
-            : isActive
-            ? " active text-primary border-0 border-b-2 border-b-primary"
-            : "hover:text-primary"
-        }
-      >
-        Registration
-      </NavLink>
+      
     </>
   );
   
@@ -88,9 +77,12 @@ const Navbar = () => {
         <div className="navbar-center hidden md:flex">
           <ul className="gap-6 menu menu-horizontal px-2 ">{navLinks1}</ul>
         </div>
-        <div className="navbar-end">
-          <Link to={"/login"}>
-            <a className="btn btn-secondary">Login</a>
+        <div className="navbar-end flex-col sm:flex-row items-end gap-2">
+          <Link className="btn btn-secondary rounded-full btn-xs sm:btn-sm" to={"/login"}>
+            <button>LOGIN</button>
+          </Link>
+          <Link className="btn text-secondary rounded-full border border-secondary sm:mx-2 btn-xs sm:btn-sm" to={"/registration"}>
+            <button>REGISTER</button>
           </Link>
         </div>
       </div>

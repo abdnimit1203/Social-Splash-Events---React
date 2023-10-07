@@ -1,12 +1,22 @@
+import { useLoaderData } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Events from "../../components/Events/Events";
 
 const Home = () => {
-    return (
-        <div>
-            <h1 className="font-bold">Home</h1>
-            <button className="btn btn-primary">Click me</button>
-            <img src="/lightLogo.png" alt="" />
-        </div>
-    );
+  const events = useLoaderData();
+
+  return (
+    <>
+      <div>
+        <Header></Header>
+      </div>
+      <div className="py-12 bg-yellow-50">
+        <h2 className="w-full text-center text-4xl font-semibold ">| Our Events |</h2>
+        <hr className="w-40 mx-auto h-10 " />
+        <Events events={events}></Events>
+      </div>
+    </>
+  );
 };
 
 export default Home;
