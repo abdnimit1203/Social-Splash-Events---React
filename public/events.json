@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "event_name": "Weddings",
+        "image_square": "weddings_square.jpg",
+        "image_cover": "weddings_cover.jpg",
+        "short_description": "Elegant weddings tailored to your dreams.",
+        "long_description": "Celebrate your special day with our expert wedding planners. From intimate gatherings to grand celebrations, we make your wedding unforgettable.",
+        "price": "Starting at $5,000",
+        "color_code": "#FF5733"
+    },
+    {
+        "id": 2,
+        "event_name": "Birthday Parties",
+        "image_square": "birthday_square.jpg",
+        "image_cover": "birthday_cover.jpg",
+        "short_description": "Fun-filled birthday parties for all ages.",
+        "long_description": "Plan the perfect birthday bash with us. From kids' parties to milestone birthdays, we create memorable experiences for you and your guests.",
+        "price": "Starting at $300",
+        "color_code": "#FFC300"
+    },
+    {
+        "id": 3,
+        "event_name": "Anniversaries",
+        "image_square": "anniversaries_square.jpg",
+        "image_cover": "anniversaries_cover.jpg",
+        "short_description": "Celebrate your love story with style.",
+        "long_description": "Mark your milestones with our anniversary event planning services. We add a touch of romance and elegance to your special day.",
+        "price": "Starting at $1,500",
+        "color_code": "#5BC0DE"
+    },
+    {
+        "id": 4,
+        "event_name": "Engagement Parties",
+        "image_square": "engagement_square.jpg",
+        "image_cover": "engagement_cover.jpg",
+        "short_description": "Engage in celebration with loved ones.",
+        "long_description": "Begin your journey to forever with a memorable engagement party. We create the perfect ambiance for your joyous announcement.",
+        "price": "Starting at $750",
+        "color_code": "#9A59B5"
+    },
+    {
+        "id": 5,
+        "event_name": "Retirement Parties",
+        "image_square": "retirement_square.jpg",
+        "image_cover": "retirement_cover.jpg",
+        "short_description": "Honoring a career well-lived.",
+        "long_description": "Celebrate the retirement of your loved ones with dignity and flair. We plan retirement parties that reflect a successful career.",
+        "price": "Starting at $500",
+        "color_code": "#2ECC71"
+    },
+    {
+        "id": 6,
+        "event_name": "Baby Shower",
+        "image_square": "babyshower_square.jpg",
+        "image_cover": "babyshower_cover.jpg",
+        "short_description": "Welcoming a bundle of joy.",
+        "long_description": "Prepare for the arrival of your little one with a heartwarming baby shower. We create baby-centric celebrations filled with love.",
+        "price": "Starting at $400",
+        "color_code": "#FF7F50"
+    }
+]

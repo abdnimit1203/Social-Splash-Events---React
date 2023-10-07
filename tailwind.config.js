@@ -5,9 +5,9 @@ export default {
       {
         mytheme: {
         
-            "primary": "#facc15",
+            "primary": "#ae81f8",
                     
-            "secondary": "#185f96",
+            "secondary": "#c62127",
                     
             "accent": "#96d5f7",
                     
@@ -31,7 +31,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'main' : 'Josefin Sans'
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
