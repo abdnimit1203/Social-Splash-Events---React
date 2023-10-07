@@ -39,7 +39,7 @@ const Header = () => {
             >
               ONE-OF-A-KIND VENUES
             </p>
-            <div  className="flex justify-center gap-4">
+            <div data-aos="fade-up" className="flex justify-center gap-4">
               <button className="btn btn-primary text-white px-6 rounded-sm">
                 Start PLANNING
               </button>
