@@ -8,7 +8,19 @@
         "long_description": "Celebrate your special day with our expert wedding planners. From intimate gatherings to grand celebrations, we make your wedding unforgettable.",
         "price": "Starting at $5,000",
         "color_code": "#FF5733",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "product_name": "DreamWeddings - Your Perfect Wedding Event Manager",
+        "product_description": "Are you dreaming of a wedding that's nothing short of magical? Look no further than DreamWeddings, your trusted partner in creating the wedding of your dreams. Our dedicated team of wedding event managers is here to turn your vision into a reality, ensuring every moment is filled with love, laughter, and unforgettable memories.",
+        "key_features": [
+            "Personalized Planning: We believe that every love story is unique, and so should be your wedding. Our experienced wedding planners work closely with you to understand your preferences, style, and dreams, crafting a wedding that reflects your personality and love story.",
+            "Vendor Selection: From renowned photographers and florists to top-notch caterers, we have a network of trusted vendors who share our commitment to excellence. We'll help you choose the best professionals to bring your wedding vision to life.",
+            "Stress-Free Coordination: Leave the logistics to us. Our team will handle all the details, from venue selection and decoration to scheduling and budget management. We ensure everything runs smoothly, allowing you to focus on your special day.",
+            "Creative Design: Whether you envision a grand ballroom affair or an intimate garden ceremony, our creative designers will transform your chosen venue into a stunning backdrop for your love story. From floral arrangements to lighting, every detail will be perfect.",
+            "Guest Experience: Your guests' comfort and enjoyment are our priority. We provide thoughtful guest services, including accommodations, transportation, and entertainment, ensuring everyone feels welcome and cherished.",
+            "Budget-Friendly Options: We understand that weddings can be expensive, and we work diligently to help you achieve your dream wedding within your budget. Our expertise in cost management ensures you get the most value for your investment.",
+            "Day-Of Coordination: On your big day, our event managers will be there every step of the way, ensuring everything unfolds seamlessly. You can relax and savor every moment, knowing we have everything under control."
+        ],
+        "contact_info": "Your wedding day is one of the most important days of your life, and at DreamWeddings, we're committed to making it truly unforgettable. Let us be your partner in creating the wedding you've always envisioned.\n\nSay 'I do' to a stress-free, beautifully orchestrated wedding. Contact us today to start planning your dream wedding!"
     },
     {
         "id": 2,
@@ -19,7 +31,17 @@
         "long_description": "Plan the perfect birthday bash with us. From kids' parties to milestone birthdays, we create memorable experiences for you and your guests.",
         "price": "Starting at $300",
         "color_code": "#FFC300",
-        "ratings": 4.0
+        "ratings": 4.0,
+        "product_name": "DreamBash - Unforgettable Birthday Parties",
+        "product_description": "At DreamBash, we specialize in creating unforgettable birthday parties that leave a lasting impression. Our expert team knows how to turn your birthday celebration into a memorable event filled with joy and excitement.",
+        "key_features": [
+            "Personalized Planning: We work closely with you to understand your unique preferences and ideas, crafting a birthday party that reflects your personality and style.",
+            "Exciting Entertainment: From themed decorations to interactive games and entertainment, we ensure your birthday bash is packed with fun and excitement.",
+            "Delicious Delights: Our team can arrange for the finest catering services, creating a menu that delights your taste buds and satisfies your guests.",
+            "Stress-Free Coordination: Leave the details to us. We handle everything, from venue selection and decorations to scheduling and budget management.",
+            "Memorable Moments: We capture every special moment, so you can cherish the memories of your birthday party for years to come."
+        ],
+        "contact_info": "Make your next birthday unforgettable with DreamBash. Contact us today to start planning your dream birthday party!"
     },
     {
         "id": 3,
@@ -30,7 +52,17 @@
         "long_description": "Mark your milestones with our anniversary event planning services. We add a touch of romance and elegance to your special day.",
         "price": "Starting at $1,500",
         "color_code": "#5BC0DE",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "product_name": "Anniversary Elegance - Celebrate Your Love Story",
+        "product_description": "Anniversary Elegance specializes in crafting elegant and romantic anniversary celebrations that honor your love story. Let us create a beautiful and meaningful anniversary event for you.",
+        "key_features": [
+            "Romantic Atmosphere: We set the stage for a romantic evening, with exquisite decor, candlelight, and special touches that capture your love.",
+            "Customized Celebrations: Each anniversary is unique, and so are our celebrations. We tailor every detail to reflect your journey together.",
+            "Fine Dining: Enjoy a gourmet dining experience with a menu curated to your preferences, ensuring a delightful culinary journey for you and your guests.",
+            "Exceptional Service: Our attentive team takes care of every aspect, ensuring a stress-free and memorable anniversary celebration.",
+            "Renew Your Vows: If you desire a vow renewal ceremony, we can arrange a touching and heartfelt experience to rekindle your commitment."
+        ],
+        "contact_info": "Celebrate your love story with Anniversary Elegance. Contact us today to plan an anniversary celebration that will leave you and your partner with cherished memories."
     },
     {
         "id": 4,
@@ -41,7 +73,17 @@
         "long_description": "Begin your journey to forever with a memorable engagement party. We create the perfect ambiance for your joyous announcement.",
         "price": "Starting at $750",
         "color_code": "#9A59B5",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "product_name": "Engage & Celebrate - Memorable Engagement Parties",
+        "product_description": "Engage & Celebrate specializes in creating memorable engagement parties that mark the beginning of your beautiful journey together. Let us make this momentous occasion truly special.",
+        "key_features": [
+            "Engagement Bliss: We create the perfect ambiance for your joyous announcement, with decor that reflects your love and commitment.",
+            "Guest Delights: From delicious catering to exciting entertainment, we ensure your guests have a fantastic time celebrating your engagement.",
+            "Stress-Free Planning: Let us handle the planning, logistics, and coordination, so you can focus on celebrating this exciting milestone.",
+            "Capture the Moment: Our photographers and videographers capture the heartfelt moments and emotions of your engagement party.",
+            "Personalized Touch: Your engagement party is a reflection of your love story. We customize every detail to align with your vision."
+        ],
+        "contact_info": "Begin your journey to forever with Engage & Celebrate. Contact us today to create a memorable engagement party that you'll cherish forever."
     },
     {
         "id": 5,
@@ -52,7 +94,17 @@
         "long_description": "Celebrate the retirement of your loved ones with dignity and flair. We plan retirement parties that reflect a successful career.",
         "price": "Starting at $500",
         "color_code": "#2ECC71",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "product_name": "Retirement Radiance - Honoring a Career Well-Lived",
+        "product_description": "Retirement Radiance specializes in crafting retirement parties that honor a career well-lived. Let us celebrate your accomplishments and mark this new chapter with grace and flair.",
+        "key_features": [
+            "Celebrating Achievements: We create a celebratory atmosphere that highlights your career accomplishments and contributions.",
+            "Thoughtful Tributes: Share heartfelt speeches and tributes with colleagues and friends, honoring your professional journey.",
+            "Delightful Dining: Enjoy a retirement feast with a menu tailored to your preferences, providing a delicious culinary experience.",
+            "Stress-Free Planning: Our team handles all the planning and coordination, ensuring a smooth and memorable retirement party.",
+            "Personal Touch: We work with you to add personal touches that reflect your personality and interests in your retirement celebration."
+        ],
+        "contact_info": "Celebrate your career achievements with Retirement Radiance. Contact us today to plan a retirement party that honors your journey and marks the beginning of a new adventure."
     },
     {
         "id": 6,
@@ -63,6 +115,16 @@
         "long_description": "Prepare for the arrival of your little one with a heartwarming baby shower. We create baby-centric celebrations filled with love.",
         "price": "Starting at $400",
         "color_code": "#FF7F50",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "product_name": "Bundles of Joy - Heartwarming Baby Showers",
+        "product_description": "Bundles of Joy specializes in creating heartwarming baby showers that celebrate the arrival of your little one. Let us shower you with love and joy as you prepare for parenthood.",
+        "key_features": [
+            "Adorable Decor: We transform your chosen venue into a baby-centric wonderland with charming decorations and themes.",
+            "Fun and Games: Enjoy delightful baby shower games and activities that entertain your guests and create lasting memories.",
+            "Sweet Treats: Treat your guests to a delectable spread of sweet and savory snacks, catering to your cravings and preferences.",
+            "Effortless Planning: We take care of all the planning and coordination, allowing you to relax and enjoy this special time.",
+            "Gifts and Keepsakes: We help organize gift registries and provide keepsakes to remember this beautiful occasion."
+        ],
+        "contact_info": "Prepare for the arrival of your little one with Bundles of Joy. Contact us today to create a heartwarming baby shower filled with love and cherished moments."
     }
 ]

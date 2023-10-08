@@ -1,20 +1,23 @@
 import { useContext, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../hooks/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const LoginForm2 = () => {
-  const { user, emailLogin,googleLogin } = useContext(AuthContext);
+  const location = useLocation()
+  console.log(location);
+  const navigate = useNavigate();
+  const { user, emailLogin, googleLogin } = useContext(AuthContext);
   const [loginErr, setLoginErr] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   //toast
   const toastLoginSuccess = () =>
     toast.success("User logged in Successfully", { theme: "colored" });
   const toastLoginCredintialerror = () =>
     toast.error(`Opps : Email/Password Doesn't match!`, { theme: "colored" });
-  const toastLoginerror = (err) =>
-    toast.error(`${err}`, { theme: "colored" });
-  console.log(user);
+  const toastLoginerror = (err) => toast.error(`${err}`, { theme: "colored" });
+  // console.log(user);
   const handleLogIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -25,10 +28,10 @@ const LoginForm2 = () => {
         .then((result) => {
           console.log(result.user);
           toastLoginSuccess();
-          setLoginErr("")
-          e.target.email.value ="";
-          e.target.password.value ="";
-         
+          setLoginErr("");
+          navigate(location?.state ? location.state : "/")
+          e.target.email.value = "";
+          e.target.password.value = "";
         })
         .catch((error) => {
           console.log(error);
@@ -38,20 +41,19 @@ const LoginForm2 = () => {
     } else {
       toastLoginerror("Already Logged in");
     }
-    
   };
-  const handleGoogleLogIn = ()=>{
-    if(!user){
+  const handleGoogleLogIn = () => {
+    if (!user) {
       googleLogin()
-      .then(res=>{
-        console.log(res.user);
-        toastLoginSuccess()
-      })
-      .catch()
-    }else{
+        .then((res) => {
+          console.log(res.user);
+          toastLoginSuccess();
+        })
+        .catch();
+    } else {
       toastLoginerror("Sign out of other account first!");
     }
-  }
+  };
   return (
     <div>
       <div>
@@ -69,7 +71,11 @@ const LoginForm2 = () => {
               onSubmit={handleLogIn}
               className="mx-auto mb-0 mt-8 max-w-md space-y-4 -z-10"
             >
-              {loginErr && <p className="max-w-md border rounded-md bg-rose-50 border-secondary text-secondary text-center py-4">{loginErr}</p>}
+              {loginErr && (
+                <p className="max-w-md border rounded-md bg-rose-50 border-secondary text-secondary text-center py-4">
+                  {loginErr}
+                </p>
+              )}
               <div>
                 <label htmlFor="email" className="sr-only">
                   Email
@@ -110,16 +116,19 @@ const LoginForm2 = () => {
 
                 <div className="relative">
                   <input
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     name="password"
                     required
                     className="w-full input input-bordered"
                     placeholder="Enter password"
                   />
 
-                  <span className="absolute inset-y-0 end-0 grid place-content-center px-4 text-slate-400">
-                    <AiOutlineEye />
-                    <AiOutlineEyeInvisible />
+                  <span onClick={()=>setShowPassword(!showPassword)} className="absolute inset-y-0 end-0 grid place-content-center px-4 text-secondary text-xl ">
+                    {showPassword ? (
+                      <AiOutlineEyeInvisible />
+                    ) :(
+                      <AiOutlineEye />
+                    ) }
                   </span>
                 </div>
                 <div className="form-control mt-6">
@@ -161,7 +170,10 @@ const LoginForm2 = () => {
             <div className="flex flex-col items-center">
               <p className="text-center font-bold text-slate-400">or</p>
               <hr className="mb-2 w-full" />
-              <button onClick={handleGoogleLogIn} className="btn max-w-md w-full mt-10 ">
+              <button
+                onClick={handleGoogleLogIn}
+                className="btn max-w-md w-full mt-10 "
+              >
                 <span>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"

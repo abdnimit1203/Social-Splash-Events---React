@@ -16,37 +16,40 @@ const AuthProvider = ({ children }) => {
   const googleProvider = new GoogleAuthProvider();
 
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   // console.log(typeof children);
 
 // email password Register
 const emailRegister = (email, password) => {
-
+  setLoading(true)
   return createUserWithEmailAndPassword(auth, email, password);
 };
 
 // email password Log In
 
 const emailLogin = (email, password) => {
+  setLoading(true)
   return signInWithEmailAndPassword(auth, email, password);
 };
 // Google  Log In
 
 const googleLogin = () => {
+  setLoading(true)
   return signInWithPopup(auth,googleProvider);
 };
 
 
 // All user LOGOUT
   const userSignOut = () => {
+    setLoading(true)
     return signOut(auth);
   };
-
 
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-
+      setLoading(false)
       return () => {
         unsubscribe();
       };
@@ -55,6 +58,7 @@ const googleLogin = () => {
 
   const authInfo = {
     user,
+    loading,
     emailRegister,
     emailLogin,
     googleLogin,

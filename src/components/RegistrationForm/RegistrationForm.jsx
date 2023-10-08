@@ -11,11 +11,16 @@ const RegistrationForm = () => {
 
   const navigate = useNavigate();
   const [passError, setPassError] = useState(null);
+  
 
   //toastify
   const toastRegisterSuccess = () =>toast.success("User created succesfully !✨", { theme: "colored" });
   const toastLoginerror = (err) =>
     toast.error(`${err}`, { theme: "colored" });
+
+
+  
+
 
   const handleReistration = (e) => {
     e.preventDefault();
@@ -110,13 +115,13 @@ const RegistrationForm = () => {
                   name="username"
                   required
                   className="w-full input input-bordered "
-                  placeholder="Username"
+                  placeholder="Username*"
                 />
               </div>
 
               <div className="relative">
                 <input
-                  type="text"
+                  type="url"
                   name="imgUrl"
                   className="w-full input input-bordered "
                   placeholder="Photo URL"
@@ -132,7 +137,7 @@ const RegistrationForm = () => {
                     name="email"
                     required
                     className="w-full input input-bordered "
-                    placeholder="Enter email"
+                    placeholder="Enter email*"
                   />
                 </div>
               </div>
@@ -148,7 +153,7 @@ const RegistrationForm = () => {
                     name="password"
                     required
                     className="w-full input input-bordered"
-                    placeholder="Enter password"
+                    placeholder="Enter password*"
                   />
                   {passError ? <p className="text-red-600">{passError}</p> : ""}
                 </div>

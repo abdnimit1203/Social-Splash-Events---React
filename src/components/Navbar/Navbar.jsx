@@ -38,7 +38,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink
-        to="/ideas"
+        to="/featured-ideas"
         className={({ isActive, isPending }) =>
           isPending
             ? "pending"
@@ -94,11 +94,11 @@ const Navbar = () => {
             <h2 className="font-semibold px-2">{user.email} </h2>
           )}
 
-          <h3 className="font-semibold px-2">
+          <h3 className="font-semibold px-2 text-center">
             {user?.displayName}
             <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2">
               <p>Edit profile</p>
-              <Link to={"/update-profile"}>
+              <Link to={"/user-profile"}>
                 <MdEditSquare className="ml-2" />
               </Link>
             </span>
@@ -141,7 +141,10 @@ const Navbar = () => {
               {navLinks1}
             </ul>
           </div>
-          <img src="/lightLogo.png" alt="Social Splash Logo" className="w-52" />
+          <Link to={"/"}>
+          
+          <img src="/lightLogo.png" alt="Social Splash Logo" className="w-40 sm:w-52" />
+          </Link>
         </div>
         <div className="navbar-center hidden md:flex">
           <ul className="gap-6 menu menu-horizontal px-2 ">{navLinks1}</ul>
