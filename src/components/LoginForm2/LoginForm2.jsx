@@ -95,12 +95,7 @@ const LoginForm2 = () => {
                 or
               </p>
               <hr className="mb-2" />
-              
-            </div>
-
-            
-          </form>
-          <button className="btn w-full mt-10">
+              <button className="btn w-full mx-auto mt-10 ">
                 <span>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
@@ -110,6 +105,11 @@ const LoginForm2 = () => {
                 </span>{" "}
                 Continue with Google
               </button>
+            </div>
+            
+            
+          </form>
+          
         </div>
 
         <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">

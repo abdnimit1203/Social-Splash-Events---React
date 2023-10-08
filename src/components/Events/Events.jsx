@@ -4,7 +4,7 @@ import EventCard from '../EventCard/EventCard';
 const Events = ({events}) => {
     console.log(events);
     return (
-        <div className='grid  grid-cols-1 gap-6 md:gap-8 overflow-x-hidden'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-1 gap-6 md:gap-8 overflow-x-hidden'>
            {
             events.map((event,id)=> <EventCard key={id} event={event}></EventCard>)
            }
