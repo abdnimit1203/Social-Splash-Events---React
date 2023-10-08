@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.1",
+    "@egjs/react-flicking": "^4.11.0",
     "aos": "^3.0.0-beta.6",
     "firebase": "^10.4.0",
     "localforage": "^1.10.0",

@@ -103,7 +103,7 @@ const Navbar = () => {
               </Link>
             </span>
           </h3>
-          <button className="btn btn-xs" onClick={handleSignOut}>
+          <button className="btn btn-xs bg-gradient-to-r from-primary to-blue-500 hover:from-secondary hover:to-yellow-500 text-white "  onClick={handleSignOut}>
             Sign out
           </button>
         

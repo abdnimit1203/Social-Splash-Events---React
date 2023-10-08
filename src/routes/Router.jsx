@@ -47,7 +47,8 @@ export const router = createBrowserRouter([
         },
         {
             path: "/event/:id",
-            element:<PrivateRoute><SingleEventCard></SingleEventCard></PrivateRoute> 
+            element:<PrivateRoute><SingleEventCard></SingleEventCard></PrivateRoute>,
+            loader: ()=> fetch("/events.json") 
         }
        ]
        

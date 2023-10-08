@@ -7,9 +7,9 @@ const EventCard = ({ event }) => {
     event_name,
     image_square,
     price,
-    short_description,
     long_description,
     color_code,
+    product_name
   } = event;
   return (
     <div
@@ -17,7 +17,11 @@ const EventCard = ({ event }) => {
       data-aos-duration="500"
       className=""
     >
-      <div className="relative flex w-[80%] md:max-w-6xl mx-auto flex-col lg:flex-row rounded-xl bg-white bg-clip-border gap-4 text-gray-700 shadow-md">
+      <div className={`relative flex w-[80%] md:max-w-6xl mx-auto flex-col lg:flex-row rounded-xl bg-white bg-clip-border gap-4 text-gray-700 shadow-md hover:bg-gradient-to-tr from-rose-100 via-white to-purple-100 `} style={{
+       
+
+        
+      }}>
         <div className="relative m-0 shrink-0 overflow-hidden lg:rounded-xl  md:rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
             src={image_square}
@@ -27,7 +31,7 @@ const EventCard = ({ event }) => {
         </div>
         <div className="p-6">
           <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased font-main">
-            {short_description}
+            {product_name}
           </h4>
           <h6
             className={` mb-4 font-semibold  border
