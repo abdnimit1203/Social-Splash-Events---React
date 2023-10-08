@@ -44,9 +44,9 @@ const EventCard = ({ event }) => {
             {long_description}
           </p>
           <div className="flex justify-between items-center">
-            <p className="text-lg italic underline font-semibold">{price}</p>
+            <p className=" italic underline font-semibold text-secondary">{price}</p>
             <Link to={`/event/${id}`}>
-              <button className="btn font-main btn-primary text-white rounded-sm">
+              <button className="btn font-main btn-primary text-white rounded-sm rounded-ee-3xl rounded-ss-3xl">
                 {" "}
                 View Details
               </button>

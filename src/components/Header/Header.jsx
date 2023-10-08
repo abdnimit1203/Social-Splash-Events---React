@@ -40,10 +40,10 @@ const Header = () => {
               ONE-OF-A-KIND VENUES
             </p>
             <div data-aos="fade-up" className="flex justify-center gap-4">
-              <button className="btn btn-primary text-white px-6 rounded-sm">
+              <button className="btn btn-primary text-white px-6 rounded-sm rounded-ee-2xl rounded-ss-2xl">
                 Start PLANNING
               </button>
-              <button className="btn btn-secondary text-white px-6 rounded-sm">
+              <button className="btn btn-secondary text-white px-6 rounded-sm rounded-ee-2xl rounded-ss-2xl">
                 Events
               </button>
             </div>
