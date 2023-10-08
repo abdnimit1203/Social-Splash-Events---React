@@ -71,11 +71,11 @@ const Navbar = () => {
         <>
         
         
-        <div className="navbar-end flex-col sm:flex-row items-end gap-2">
-          <Link className="btn btn-secondary rounded-sm shadow-md shadow-red-200 btn-xs sm:btn-sm rounded-ee-2xl rounded-ss-2xl" to={"/login"}>
+        <div className=" flex-col sm:flex-row items-end gap-2 justify-end">
+          <Link className="btn btn-secondary rounded-sm shadow-md shadow-red-200 btn-xs sm:btn-sm rounded-ee-2xl rounded-ss-2xl " to={"/login"}>
             <button>LOGIN</button>
           </Link>
-          <Link className="btn bg-white hover:bg-secondary hover:text-white text-secondary  shadow-md shadow-red-200 border-2 border-secondary hover:border-secondary sm:mx-2 btn-xs sm:btn-sm rounded-sm rounded-ee-2xl rounded-ss-2xl " to={"/registration"}>
+          <Link className="btn bg-white hover:bg-secondary hover:text-white text-secondary  shadow-md shadow-red-200 border-2 border-secondary hover:border-secondary sm:mx-2 btn-xs sm:btn-sm rounded-sm rounded-ee-2xl rounded-ss-2xl" to={"/registration"}>
             <button>REGISTER</button>
           </Link>
         </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
         
       )}
       {user && (
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col lg:flex-row gap-2 items-center justify-center border-l-2 lg:border-0">
           {user.photoURL ? (
             <img
               src={user?.photoURL}
@@ -96,7 +96,7 @@ const Navbar = () => {
 
           <h3 className="font-semibold px-2">
             {user?.displayName}
-            <span className="flex justify-center items-center text-xs font-light bg-teal-500 text-white rounded-xl px-2">
+            <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2">
               <p>Edit profile</p>
               <Link to={"/update-profile"}>
                 <MdEditSquare className="ml-2" />
@@ -114,7 +114,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <div className="navbar bg-base-100 font-main uppercase font-semibold p-6 lg:px-[10%]">
+      <div className="navbar bg-base-100 font-main uppercase font-semibold p-2 py-6 md:p-6 lg:px-[10%]">
       
         <div className="navbar-start">
           <div className="dropdown">
@@ -146,9 +146,12 @@ const Navbar = () => {
         <div className="navbar-center hidden md:flex">
           <ul className="gap-6 menu menu-horizontal px-2 ">{navLinks1}</ul>
         </div>
+        <div className="navbar-end">
         {
           navlinksUser
         }
+        </div>
+       
         <span className="capitalize font-normal"><ToastContainer/></span>
       </div>
     </div>

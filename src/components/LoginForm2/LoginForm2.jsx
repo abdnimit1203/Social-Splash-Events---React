@@ -5,13 +5,15 @@ import { AuthContext } from "../../hooks/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const LoginForm2 = () => {
-  const { user, emailLogin } = useContext(AuthContext);
+  const { user, emailLogin,googleLogin } = useContext(AuthContext);
   const [loginErr, setLoginErr] = useState("");
   //toast
   const toastLoginSuccess = () =>
     toast.success("User logged in Successfully", { theme: "colored" });
-  const toastLoginerror = () =>
+  const toastLoginCredintialerror = () =>
     toast.error(`Opps : Email/Password Doesn't match!`, { theme: "colored" });
+  const toastLoginerror = (err) =>
+    toast.error(`${err}`, { theme: "colored" });
   console.log(user);
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -30,18 +32,31 @@ const LoginForm2 = () => {
         })
         .catch((error) => {
           console.log(error);
-          toastLoginerror();
+          toastLoginCredintialerror();
           setLoginErr(error.message.split(":")[1]);
         });
     } else {
       toastLoginerror("Already Logged in");
     }
+    
   };
+  const handleGoogleLogIn = ()=>{
+    if(!user){
+      googleLogin()
+      .then(res=>{
+        console.log(res.user);
+        toastLoginSuccess()
+      })
+      .catch()
+    }else{
+      toastLoginerror("Sign out of other account first!");
+    }
+  }
   return (
     <div>
       <div>
-        <section className="relative flex flex-wrap lg:h-screen lg:items-center">
-          <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+        <section className="relative flex flex-wrap lg:h-screen lg:items-center flex-col-reverse lg:flex-col">
+          <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24 ">
             <div className="mx-auto max-w-lg text-center">
               <h1 className="text-2xl font-bold sm:text-3xl">Login Now!</h1>
 
@@ -52,7 +67,7 @@ const LoginForm2 = () => {
 
             <form
               onSubmit={handleLogIn}
-              className="mx-auto mb-0 mt-8 max-w-md space-y-4"
+              className="mx-auto mb-0 mt-8 max-w-md space-y-4 -z-10"
             >
               {loginErr && <p className="max-w-md border rounded-md bg-rose-50 border-secondary text-secondary text-center py-4">{loginErr}</p>}
               <div>
@@ -146,7 +161,7 @@ const LoginForm2 = () => {
             <div className="flex flex-col items-center">
               <p className="text-center font-bold text-slate-400">or</p>
               <hr className="mb-2 w-full" />
-              <button className="btn max-w-md w-full mt-10 ">
+              <button onClick={handleGoogleLogIn} className="btn max-w-md w-full mt-10 ">
                 <span>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
