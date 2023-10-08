@@ -16,9 +16,9 @@ const Testimonial = () => {
         plugins={plugins}
         align="prev"
         circular={true}
-        onMoveEnd={(e) => {
-          console.log(e);
-        }}
+        // onMoveEnd={(e) => {
+        //   console.log(e);
+        // }}
       >
         <div className="panel bg-gradient-to-tr from-white via-purple-100 to-white mx-6 w-fit rounded-xl rounded-ee-[155px] rounded-ss-[55px] h-fit">
           <div className="text-center p-6 rounded-xl border-8 border-fuchsia-500 rounded-ee-[150px] rounded-ss-[50px] h-fit">

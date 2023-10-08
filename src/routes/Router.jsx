@@ -9,7 +9,6 @@ import UpcomingEvents from "../pages/UpcomingEvents/UpcomingEvents";
 import UserProfile from "../pages/UserProfile/UserProfile";
 import SingleEventCard from "../components/SingleEventCard/SingleEventCard";
 import PrivateRoute from "./PrivateRoute";
-import LoggedInRoute from "./LoggedInRoute";
 
 export const router = createBrowserRouter([
     {
@@ -39,7 +38,7 @@ export const router = createBrowserRouter([
         },
         {
             path: "/login",
-            element:<LoggedInRoute><Login></Login></LoggedInRoute> ,
+            element:<Login></Login> ,
         },
         {
             path: "/registration",
