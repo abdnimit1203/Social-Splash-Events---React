@@ -10,7 +10,7 @@ const SingleEventCard = () => {
   const myEvent = events.find((event) => event.id == id);
   console.log(myEvent);
   const {
-    ratings,
+    
     contact_info,
     key_features,
     product_description,
@@ -39,7 +39,7 @@ const SingleEventCard = () => {
         <div className="flex justify-between">
         <p className="text-4xl font-bold"><span className="font-bold font-main text-primary">Event Name : </span>{ product_name }</p>
     
-        <p ><BiSolidHeartCircle className="text-rose-500"/>{ratings}</p>
+        <p ><BiSolidHeartCircle className="text-rose-500"/></p>
         </div>
         <hr className="w-full"/>
         <h2 className="font-semibold text-primary">Description:</h2>

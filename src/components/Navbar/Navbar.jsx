@@ -108,7 +108,7 @@ const Navbar = () => {
 
           <h3 className="text-sm font-semibold px-2 text-center">
             {user?.displayName}
-            <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2">
+            <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2 hidden">
               <p>Edit profile</p>
               <Link to={"/user-profile"}>
                 <MdEditSquare className="ml-2" />
