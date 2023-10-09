@@ -18,7 +18,7 @@ const About = () => {
 
       </div> 
       <div className="flex flex-col justify-center items-center w-[80%] mx-auto gap-6 py-10 lg:py-20">
-        <h2 className="text-xl font-bold text-center">
+        <h2 className="text-xl font-bold text-center text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
           Social Splash events is your one stop event planning and design
           company.
         </h2>
@@ -61,8 +61,8 @@ const About = () => {
             </div>
           </section>
         </div>
-        <div className="px-[10%] py-10 space-y-4">
-            <h2 className="header">Why Choose Us?</h2>
+        <div className="px-[10%] py-10 space-y-4 lg:w-[80%] mx-auto">
+            <h2 className="header transition duration-300 ease-in-out hover:scale-105 py-10">Why Choose Us?</h2>
             <li> <span className="font-bold">Expertise:</span> Our team boasts years of expertise in planning and executing social events, including weddings, birthday parties, anniversaries, engagement parties, retirement parties, and baby showers. We have a deep understanding of the unique nuances and requirements of each event type, and we tailor our services to match your specific needs.</li>
             <li> <span className="font-bold">Personalization:</span> We believe that every event is a reflection of your style, personality, and story. Thats why we take the time to get to know you and your preferences. Whether you dream of an elegant wedding, a fun-filled birthday bash, or a heartwarming anniversary celebration, we personalize every detail to ensure its a perfect fit for you.</li>
             <li> <span className="font-bold">Attention to Detail:</span> From the grandest design elements to the tiniest details, we leave no stone unturned. Our meticulous approach ensures that every aspect of your event is executed flawlessly. We pride ourselves on our ability to create an immersive experience for you and your guests.</li>

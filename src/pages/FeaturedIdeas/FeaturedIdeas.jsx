@@ -46,7 +46,7 @@ const FeaturedIdeas = () => {
       <div className="flex flex-col lg:flex-row lg:justify-around">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
           {/* Single card */}
-          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto">
+          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto transition duration-300 ease-in-out hover:scale-105">
             <div className="relative m-0 overflow-hidden rounded-t-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
               <img src="https://plus.unsplash.com/premium_photo-1661657777704-8aacfc70692e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
             </div>
@@ -68,7 +68,7 @@ const FeaturedIdeas = () => {
             </div>
           </div>
           {/* Single card */}
-          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto">
+          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto transition duration-300 ease-in-out hover:scale-105" >
             <div className="relative m-0 overflow-hidden rounded-t-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
               <img src="https://images.unsplash.com/photo-1574120153654-453fb26e6bd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
             </div>
@@ -91,7 +91,7 @@ const FeaturedIdeas = () => {
             </div>
           </div>
           {/* Single card */}
-          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto">
+          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto transition duration-300 ease-in-out hover:scale-105">
             <div className="relative m-0 overflow-hidden rounded-t-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
               <img src="https://images.unsplash.com/photo-1513273216459-54c4833d6b4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
             </div>
@@ -114,7 +114,7 @@ const FeaturedIdeas = () => {
             </div>
           </div>
           {/* Single card */}
-          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto">
+          <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto transition duration-300 ease-in-out hover:scale-105">
             <div className="relative m-0 overflow-hidden rounded-t-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
               <img src="https://images.unsplash.com/photo-1589050820342-d666e6116a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" />
             </div>

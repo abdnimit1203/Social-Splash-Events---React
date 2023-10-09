@@ -1,7 +1,7 @@
 const ArticlesRight = () => {
     return (
       <div className="lg:pl-20">
-        <h1 className="text-xl font-medium pb-10">Article Topics on Ideas: SSE </h1>
+        <h1 className="text-xl pb-10 font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">Article Topics on Ideas: SSE </h1>
         <div className="join join-vertical w-full font-main">
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" checked="checked" />

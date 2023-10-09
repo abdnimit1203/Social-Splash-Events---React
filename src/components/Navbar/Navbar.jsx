@@ -108,7 +108,7 @@ const Navbar = () => {
 
           <h3 className="text-sm font-semibold px-2 text-center">
             {user?.displayName}
-            <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2 hidden">
+            <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2 ">
               <p>Edit profile</p>
               <Link to={"/user-profile"}>
                 <MdEditSquare className="ml-2" />
@@ -126,7 +126,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <div className="navbar bg-base-100 font-main uppercase font-semibold p-2 py-6 md:p-6 lg:px-[10%]">
+      <div className="navbar bg-base-100 font-main  font-semibold p-2 py-6 md:p-6 lg:px-[10%]">
       
         <div className="navbar-start">
           <div className="dropdown">
@@ -148,7 +148,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 rounded-box w-52 gap-6"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 rounded-box w-52 gap-6 uppercase"
             >
               {navLinks1}
             </ul>
@@ -159,7 +159,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden md:flex">
-          <ul className="gap-6 menu menu-horizontal px-2 ">{navLinks1}</ul>
+          <ul className="gap-6 menu menu-horizontal px-2 uppercase">{navLinks1}</ul>
         </div>
         <div className="navbar-end">
         {

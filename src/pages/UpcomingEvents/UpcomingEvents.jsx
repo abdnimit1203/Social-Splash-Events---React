@@ -4,7 +4,7 @@ const UpcomingEvents = () => {
   return (
     <div>
       <div
-        className="hero "
+        className="hero h-[216px]"
         style={{
           backgroundImage: "url(/formImg.jpg)",
         }}
@@ -30,11 +30,11 @@ const UpcomingEvents = () => {
       <p className="mb-5 max-w-sm">Join Our live event show on the date mentioned. Create a Account if you dont have one!</p>
       <Link to={"/registration"}>
       
-      <button className="btn btn-secondary btn-wide rounded-sm">Register</button>
+      <button className="btn btn-secondary btn-wide rounded-sm transition duration-300 ease-in-out hover:scale-110">Register</button>
       </Link>
     </div>
     <div className="min-h-screen flex flex-col justify-center gap-8  bg-[#11111183] lg:pl-20">
-    <div className="flex px-6 ">
+    <div className="flex px-6 transition duration-300 ease-in-out hover:scale-110">
         <div className="aspect-square bg-slate-800 font-bold uppercase p-6 flex flex-col justify-center items-center"><span className="font-black text-4xl">14</span><span>October</span> </div>
         <div className=" text-slate-800 bg-[#ffffffef] flex justify-center items-start flex-col text-left px-3 py-6">
             <h2 className="font-bold md:text-xl">Wedding Ceremony : Joe & Monica </h2>
@@ -42,7 +42,7 @@ const UpcomingEvents = () => {
             <button className="btn border-secondary btn-sm rounded-sm text-secondary border-2">Details</button>
         </div>
     </div>
-    <div className="flex px-6 ">
+    <div className="flex px-6 transition duration-300 ease-in-out hover:scale-110">
         <div className="aspect-square bg-secondary font-bold uppercase p-6 flex flex-col justify-center items-center"><span className="font-black text-4xl">24</span><span> October  </span> </div>
         <div className=" text-slate-800 bg-[#ffffffdc] flex justify-center items-start flex-col text-left px-3 py-6">
             <h2 className="font-bold md:text-xl">Baby Shower : Bonnie and Clyde. </h2>
@@ -50,7 +50,7 @@ const UpcomingEvents = () => {
             <button className="btn btn-secondary btn-sm rounded-sm border-2">Details</button>
         </div>
     </div>
-    <div className="flex px-6 ">
+    <div className="flex px-6 transition duration-300 ease-in-out hover:scale-110">
         <div className="aspect-square bg-primary font-bold uppercase p-6 flex flex-col justify-center items-center"><span className="font-black text-4xl">30</span><span>October</span> </div>
         <div className=" text-slate-800 bg-[#fffffff3] flex justify-center items-start flex-col text-left px-3 py-6">
             <h2 className="font-bold md:text-xl">Wedding Ceremony :  Sonny & Cher. </h2>
