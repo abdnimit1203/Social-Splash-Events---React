@@ -96,7 +96,7 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>Its a type error at first . As the function is taking a varible and printing it inside template string. It is calling itself (without any arguement) rather than providing a value. So name becomes undefined while printing.</i>
+<i>The name variable is never defined inside function . So either it has to come upon calling the function else it remains undefined.  The function takes a varible and ruetn it inside template string. But it is called without any value. So name becomes undefined while printing.</i>
 
 </p>
 </details>
