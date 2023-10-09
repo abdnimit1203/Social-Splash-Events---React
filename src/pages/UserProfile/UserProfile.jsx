@@ -12,6 +12,8 @@ const UserProfile = () => {
 
   const toastProfileUpdateSuccess = () =>
     toast.success("Profile Updated", { theme: "colored" });
+  const toastProfileUpdateError = (err) =>
+    toast.error(`${err.split(":")[1]}`, { theme: "colored" });
   
   //handle form
   const handleUpdateProfile = (e) => {
@@ -27,7 +29,8 @@ const UserProfile = () => {
        navigate("/user-profile")
     })
     .catch(error=>{
-        console.log(error.message);   
+        console.log(error.message);  
+        toastProfileUpdateError(error.message) 
     })
 
   };
@@ -37,7 +40,7 @@ const UserProfile = () => {
         Welcome to Profile Manager
       </h2>
       <div className="text-white  font-semibold flex flex-col justify-center items-center border border-white w-fit mx-auto p-10 rounded-3xl gap-6 py-10">
-        <img src={user?.photoURL} alt="" className="rounded-full max-w-[220px]"  />
+        <img src={user?.photoURL} alt="" className="rounded-full max-w-[220px] object-cover aspect-square"  />
         <h3 className="text-3xl gap-2 items-center">
           {user.displayName}
           {user?.emailVerified ? (

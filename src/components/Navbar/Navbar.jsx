@@ -100,7 +100,7 @@ const Navbar = () => {
             <img
               src={user?.photoURL}
               alt="profilepic"
-              className="w-12 rounded-full aspect-square"
+              className="w-12 rounded-full aspect-square object-cover"
             />
           ) : (
             <h2 className="font-semibold px-2">{user.email} </h2>

@@ -5,10 +5,11 @@ import { updateProfile } from "firebase/auth";
 import auth from "../../hooks/firebase.config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const RegistrationForm = () => {
   const { emailRegister } = useContext(AuthContext);
-
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [passError, setPassError] = useState(null);
   
@@ -149,13 +150,21 @@ const RegistrationForm = () => {
 
                 <div className="relative">
                   <input
-                    type="password"
+
+                     type={showPassword ? "text" : "password"}
                     name="password"
                     required
                     className="w-full input input-bordered"
                     placeholder="Enter password*"
                   />
-                  {passError ? <p className="text-red-600">{passError}</p> : ""}
+                   <span onClick={()=>setShowPassword(!showPassword)} className="absolute inset-y-0 end-0 grid place-content-center px-4 text-secondary text-xl ">
+                    {showPassword ? (
+                      <AiOutlineEyeInvisible />
+                    ) :(
+                      <AiOutlineEye />
+                    ) }
+                  </span>
+                  {passError ? <p className="text-red-600 absolute">{passError}</p> : ""}
                 </div>
                 <div className="form-control mt-6">
                   <button
