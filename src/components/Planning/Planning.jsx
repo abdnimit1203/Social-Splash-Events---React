@@ -1,12 +1,13 @@
 const Planning = () => {
   return (
-    <div>
+    <div >
       {/* start */}
       <h2 className="w-full text-center text-2xl md:text-3xl font-bold py-10">
-        | We’ll walk you through every part of planning |
+        We`ll walk you through every part of planning
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-6 lg:p-20">
-        <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md border py-10">
+      <div className="grid w-[80%] mx-auto items-center justify-center md:grid-cols-2  lg:grid-cols-3 gap-6 my-10">
+        <div data-aos={"zoom-out-up"}
+      data-aos-duration="500" className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md border py-10 mx-auto">
           <div className="p-6  text-center space-y-2">
             <h4 className="text-sm font-semibold">SPREAD THE WORD</h4>
             <h2 className="text-2xl font-bold">Your announcements</h2>
@@ -29,7 +30,8 @@ const Planning = () => {
           </div>
         </div>
         {/* end */}
-        <div className="relative flex w-80 flex-col rounded-xl bg-teal-50 bg-clip-border text-gray-700 shadow-md border py-8  lg:h-fit lg:my-auto">
+        <div data-aos={"zoom-in-up"}
+      data-aos-duration="500" className="relative flex w-80 flex-col rounded-xl bg-teal-50 bg-clip-border text-gray-700 shadow-md border py-8  lg:h-fit lg:my-auto mx-auto">
           <div className="p-6  text-center space-y-2">
             <h4 className="text-sm font-semibold">SPREAD THE WORD</h4>
             <h2 className="text-2xl font-bold">Your announcements</h2>
@@ -48,11 +50,12 @@ const Planning = () => {
             </button>
           </div>
           <div className="relative mx-4 mt-4  overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
-            <img src="/planning1.JPG" className="h-full w-full object-cover" />
+            <img src="/planning2.JPG" className="h-full w-full object-cover" />
           </div>
         </div>
         {/* end */}
-        <div className="relative flex w-80 flex-col rounded-xl bg-[white] bg-clip-border text-gray-700 shadow-md border py-10 ">
+        <div data-aos={"fade-up"}
+      data-aos-duration="500" className="relative flex w-80 flex-col rounded-xl bg-[white] bg-clip-border text-gray-700 shadow-md border py-10 mx-auto">
           <div className="p-6  text-center space-y-2">
             <h4 className="text-sm font-semibold">BUILD YOUR WISH LIST</h4>
             <h2 className="text-2xl font-bold">Your registry</h2>
@@ -70,7 +73,7 @@ const Planning = () => {
             </button>
           </div>
           <div className="relative mx-4 mt-4  overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
-            <img src="/planning3.png" className="h-full w-full object-cover" />
+            <img src="/planning3.JPG" className="h-full w-full aspect-cover" />
           </div>
         </div>
         {/* end */}

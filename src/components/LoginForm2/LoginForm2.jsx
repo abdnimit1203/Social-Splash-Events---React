@@ -18,6 +18,8 @@ const LoginForm2 = () => {
     toast.error(`Opps : Email/Password Doesn't match!`, { theme: "colored" });
   const toastLoginerror = (err) => toast.error(`${err}`, { theme: "colored" });
   // console.log(user);
+
+
   const handleLogIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -48,6 +50,7 @@ const LoginForm2 = () => {
         .then((res) => {
           console.log(res.user);
           toastLoginSuccess();
+          navigate(location?.state ? location.state : "/")
         })
         .catch();
     } else {

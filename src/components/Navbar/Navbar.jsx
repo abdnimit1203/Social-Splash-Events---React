@@ -61,6 +61,18 @@ const Navbar = () => {
       >
         Upcoming Events
       </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive, isPending }) =>
+          isPending
+            ? "pending"
+            : isActive
+            ? " active text-primary border-0 border-b-2 border-b-primary"
+            : "hover:text-primary"
+        }
+      >
+        About
+      </NavLink>
 
       
     </>
@@ -94,7 +106,7 @@ const Navbar = () => {
             <h2 className="font-semibold px-2">{user.email} </h2>
           )}
 
-          <h3 className="font-semibold px-2 text-center">
+          <h3 className="text-sm font-semibold px-2 text-center">
             {user?.displayName}
             <span className="flex justify-center items-center text-[10px] md:text-xs font-light bg-teal-500 text-white rounded-xl px-2">
               <p>Edit profile</p>

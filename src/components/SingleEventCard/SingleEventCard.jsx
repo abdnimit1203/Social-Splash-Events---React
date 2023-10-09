@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { BiSolidHeartCircle } from "react-icons/bi";
+import Services from "../Services/Services";
+import { AiOutlineDown } from "react-icons/ai";
 
 const SingleEventCard = () => {
   const { id } = useParams();
@@ -49,11 +51,18 @@ const SingleEventCard = () => {
         <button>Book you order now!</button>
       </div>
 
-      <div className="bg-slate-700 text-white">
+      {/* <div className="bg-slate-700 text-white">
         <div className="p-20">
 
         <p>Rates are determined on a case by case basis. Contact us for more information.</p>
         </div>
+      </div> */}
+      <AiOutlineDown className="w-full font-bold text-4xl text-secondary"/>
+      <div className="py-6">
+        <Services></Services>
+      </div>
+      <div>
+
       </div>
     </div>
   );

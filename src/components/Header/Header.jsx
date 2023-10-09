@@ -23,11 +23,11 @@ const Header = () => {
               className="flex items-center flex-col gap-2"
             >
               <h4 className="text-lg lg:text-2xl bg-[#11111179] w-fit">
-                From Weddings Celebrations, Parties, and more -
+                From Weddings Celebrations, Parties, Anniversaries and more -
               </h4>
               <h4 className="text-lg lg:text-2xl bg-[#11111179] w-fit">
                 {" "}
-                Do not fear, Take Heart!
+                Do not fear, Choose Social Splash!
               </h4>
             </div>
             <p data-aos="fade-right" className="text-xl italic mt-6">

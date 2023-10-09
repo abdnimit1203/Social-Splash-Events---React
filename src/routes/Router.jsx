@@ -9,6 +9,7 @@ import UpcomingEvents from "../pages/UpcomingEvents/UpcomingEvents";
 import UserProfile from "../pages/UserProfile/UserProfile";
 import SingleEventCard from "../components/SingleEventCard/SingleEventCard";
 import PrivateRoute from "./PrivateRoute";
+import About from "../pages/About/About";
 
 export const router = createBrowserRouter([
     {
@@ -34,6 +35,11 @@ export const router = createBrowserRouter([
         {
             path: "/user-profile",
             element:<UserProfile></UserProfile> ,
+            
+        },
+        {
+            path: "/about",
+            element:<About></About>,
             
         },
         {
