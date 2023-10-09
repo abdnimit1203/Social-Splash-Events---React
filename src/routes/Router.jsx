@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
         },
         {
             path: "/featured-ideas",
-            element: <FeaturedIdeas></FeaturedIdeas>,
+            element: <PrivateRoute><FeaturedIdeas></FeaturedIdeas></PrivateRoute>,
             
         },
         {
