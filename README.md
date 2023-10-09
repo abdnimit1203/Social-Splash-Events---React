@@ -27,4 +27,4 @@ A place to find all your your social events.
 
 - feature_8 : Password button now has eye button to toggle between password hidden to visible.
 
-## QUIZ ANSWERS are given below in separete md file
+### QUIZ ANSWERS are given in separete md file named "questions_and_answers.md"
