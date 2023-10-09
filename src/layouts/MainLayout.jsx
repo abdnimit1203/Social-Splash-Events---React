@@ -16,7 +16,13 @@ const MainLayout = () => {
       }`;
     }
     if (location.state) {
-      document.title = `${location.state}`;
+      if(location.pathname == "/login"){
+        document.title = `Login`;
+      }else{
+
+        document.title = `${location.state}`;
+        console.log(location);
+      }
     }
   }, [location]);
   return (
